@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/utilities.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Read Our Blog</title>
+  </head>
+  <body id="home">
+    <header class="hero blog">
+      <div id="navbar" class="navbar top">
+        <h1 class="logo">
+          <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span
+          >Ledger
+        </h1>
+        <nav>
+          <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="./index.html#about">About</a></li>
+            <li><a href="./index.html#cases">Cases</a></li>
+            <li><a href="./index.html#blog">Blog</a></li>
+            <li><a href="./index.html#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="content">
+        <h1>Blog</h1>
+      </div>
+    </header>
+
+    <main>
+      <section class="post">
+        <h2>Blog Post One</h2>
+        <p class="meta">
+          <i class="fas fa-user"></i> Posted by <strong>John Doe</strong> |
+          April 23 2020
+        </p>
+        <img src="./img/blog/blog1.jpg" alt="" />
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Asperiores
+          aperiam repellendus est harum ad vel. Fuga, voluptatum ut dolorem eius
+          officiis expedita officia tempora
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum quis
+          enim nihil omnis illum ab dolore rerum exercitationem numquam tenetur,
+          nam reiciendis excepturi maxime blanditiis dolorem at officia beatae
+          unde? Explicabo consequuntur officiis provident consequatur beatae
+          voluptatum adipisci dolores veritatis, unde ea sed facere eaque, quos
+          voluptates veniam excepturi officia aliquam. Temporibus ab accusantium
+          veniam natus ut rem ex iste!
+        </p>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit
+          nostrum inventore, quo, aut, quidem rerum fuga unde autem eos
+          doloribus possimus commodi aspernatur facilis quam nisi itaque quasi
+          repellendus ratione sit recusandae doloremque minima repudiandae.
+          Cumque eos ex id non et quae itaque iure quod magni doloremque
+          distinctio, exercitationem fugit repellendus officia aliquid dolorum
+          unde culpa in saepe error numquam deserunt. Eligendi vitae quia ut!
+          Non minus odio iste quasi, nam consequuntur voluptate velit doloremque
+          quo voluptates repellendus ea necessitatibus!
+        </p>
+      </section>
+    </main>
+
+    <footer class="footer bg-dark">
+      <div class="social">
+        <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+        <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+        <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+      </div>
+      <p>Copyright &copy; 2020 - EdgeLedger</p>
+    </footer>
+
+    <script>
+      const navbar = document.getElementById("navbar");
+      let scrolled = false;
+
+      window.onscroll = function () {
+        if (window.pageYOffset > 100) {
+          navbar.classList.remove("top");
+          if (!scrolled) {
+            navbar.style.transform = "translateY(-70px)";
+          }
+          setTimeout(() => {
+            navbar.style.transform = "translateY(0)";
+            scrolled = true;
+          }, 200);
+        } else {
+          navbar.classList.add("top");
+          scrolled = false;
+        }
+      };
+    </script>
+
+    <script
+      src="https://kit.fontawesome.com/df012b2a98.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
