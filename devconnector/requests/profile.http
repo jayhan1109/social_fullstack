@@ -76,4 +76,8 @@ DELETE http://localhost:5000/api/profile/education/5fd1f5568bcd8d0e40d8b6a8
 Content-Type: application/json
 x-auth-token: {{x-auth-token}}
 
+### Get Github repo
+GET http://localhost:5000/api/profile/github/jayhan1109
+Content-Type: application/json
+
 ###
