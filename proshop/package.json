@@ -1,12 +1,24 @@
 {
   "name": "proshop",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "MERN shopping cart app",
+  "main": "server.js",
+  "type": "module",
   "scripts": {
-    "client": "cd client && npm start"
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "cd client && npm start",
+    "dev": "concurrently \"npm run client\" \"npm run server\""
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC"
+  "author": "Jay Han",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6",
+    "concurrently": "^5.3.0"
+  }
 }
