@@ -1,0 +1,13 @@
+### Fetch all products
+GET {{URL}}/api/products
+Accept: application/json
+
+### Fetch single product by ID
+GET {{URL}}/api/products/5fdabdfece7a1b3c5c30ab0a
+Accept: application/json
+
+###
+
+
+
+
