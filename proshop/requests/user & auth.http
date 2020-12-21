@@ -1,0 +1,17 @@
+### Login
+POST {{URL}}/api/users/login
+Content-Type: application/json
+
+{
+  "email": "john@example.com",
+  "password": "123456"
+}
+
+### Get User Profile
+GET {{URL}}/api/users/profile
+Content-Type: application/json
+authorization: "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjVmZGFiZGZlY2U3YTFiM2M1YzMwYWIwMyIsImlhdCI6MTYwODUyOTk5MiwiZXhwIjoxNjExMTIxOTkyfQ.NxbmzyB6Aa2ys2n5erdOhZeMhtnsEOWxHYAy9CAieY0"
+
+{}
+
+###
