@@ -5,25 +5,20 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ca29ae0a-d767-4d2e-ab1d-fe24ddaccfdb" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/bootstrap.min.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Footer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Product.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/Rating.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/screens/HomeScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/components/screens/ProductScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/config/db.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/orderModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/productModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/models/userModel.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/products.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/backend/server.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.eslintcache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/screens/HomeScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screens/HomeScreen.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/components/screens/ProductScreen.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/screens/ProductScreen.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/frontend/package.json" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/package.json" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
@@ -67,21 +62,44 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Study\traversy\proshop\backend" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Study\traversy\proshop\frontend\public" />
       <recent name="C:\Study\traversy\proshop\frontend\src" />
+      <recent name="C:\Study\traversy\proshop\frontend\public" />
       <recent name="C:\Study\traversy\proshop" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.client">
+  <component name="RunManager" selected="npm.server">
     <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
       <method v="2" />
     </configuration>
     <configuration name="client" type="js.build_tools.npm">
-      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="start" />
+        <script value="client" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="dev" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration name="server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="server" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
@@ -89,6 +107,8 @@
     </configuration>
     <list>
       <item itemvalue="JavaScript Debug.Debug Application" />
+      <item itemvalue="npm.dev" />
+      <item itemvalue="npm.server" />
       <item itemvalue="npm.client" />
     </list>
   </component>
@@ -101,6 +121,8 @@
       <option name="presentableId" value="Default" />
       <updated>1610844308754</updated>
       <workItem from="1610844310209" duration="5006000" />
+      <workItem from="1610854890464" duration="3819000" />
+      <workItem from="1610922241638" duration="2089000" />
     </task>
     <task id="LOCAL-00001" summary="Initial Proshop Project">
       <created>1610844448974</created>
@@ -109,7 +131,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610844448974</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Frontend part1">
+      <created>1610854931030</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1610854931030</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +147,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Initial Proshop Project" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial Proshop Project" />
+    <MESSAGE value="Frontend part1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Frontend part1" />
   </component>
 </project>
